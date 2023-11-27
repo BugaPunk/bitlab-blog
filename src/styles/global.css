@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+	/* body {
+		transition: background-color 0.5s ease;
+	} */
+	#font-terminal {
+		font-family: 'Victor Mono', monospace;
+	}
+
+	.prose code {
+		font-size:13px;
+	}
+
+	@font-face {
+		font-family: Selawik-B;
+		src: url(../assets/fonts/Selawik-Bold.woff2) format('woff2');
+	}
+
+	@font-face {
+		font-family: Selawik-M;
+		src: url(../assets/fonts/Selawik-SemiBold.woff2) format('woff2');
+	}
+
+	@font-face {
+		font-family: Selawik-L;
+		src: url(../assets/fonts/Selawik-Light.woff2) format('woff2');
+	}
+
+	@font-face {
+		font-family: Selawik-R;
+		src: url(../assets/fonts/Selawik-Regular.woff2) format('woff2');
+	}
+
+	.font-t {
+		font-family: Selawik-M;
+	}
+
+	.font-r {
+		font-family: Selawik-R;
+	}
+
+	.font-l {
+		font-family: Selawik-L;
+	}
+
+	
+
+	:root {
+		font-family: Selawik-R;
+	}
+
+	.prose h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply text-zinc-800 dark:text-zinc-100 !important;
+	}
+}
+
+.glass {
+	background: rgba(57, 56, 56, 0.52);
+	backdrop-filter: blur(13px) saturate(150%);
+	-webkit-backdrop-filter: blur(13px) saturate(150%);
+	z-index: -1;
+}
+
+.shadow {
+	box-shadow: -5px 3px 8px 1px rgba(0, 0, 0, 0.12);
+}

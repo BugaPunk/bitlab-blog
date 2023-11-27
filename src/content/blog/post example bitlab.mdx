@@ -1,0 +1,87 @@
+---
+title: 'Tutorial: Crea un Post en BitLab Blog'
+description: 'Como crear un post.'
+pubDate: 'Nov 26 2023'
+heroImage: '../../assets/images/bitlab-blog-e.jpg'
+category: 'Otros'
+tags: ['md', 'mdx', 'kotlin', 'code', 'PC']
+---
+
+# Introducción
+
+Hola este es un tutorial de como hacer posts en BitLab Blog, este texto es un archivo .mdx tambien puede usar en el formato .md., sin que haya diferencia alguna.
+
+* Podemos resaltar algunas caracteristicas de este formato:
+    * Los posts se escriben en un formato de texto sencillo llamado Markdown.
+    * Markdown es un lenguaje de marcado ligero que utiliza símbolos simples para representar diferentes elementos de formato de texto, como encabezados, listas, enlaces, código, imágenes, etc.
+    * Para convertir el texto Markdown en HTML, se utiliza un conversor de Markdown.
+    * El HTML resultante se puede cargar en un servidor web para que se pueda visualizar en un navegador web.
+
+
+## Resaltar Texto
+
+> El Markdown se usa comúnmente para crear contenido con mucho texto, como artículos de blog y documentación. Astro incluye soporte integrado para archivos estándar de Markdown, que también pueden incluir frontmatter YAML para definir metadatos personalizados como un título, descripción y etiquetas.
+
+## Mostrar una imagen
+
+<figure>
+  <img
+    src="https://onedrive.live.com/embed?resid=B3617E53BCF30304%21156&authkey=%21AHf6WNPpyiOB1ME&width=5120&height=2880"
+    alt=""
+  />
+  <figcaption>
+    >Fondo de pantalla: Plasm inBlue.<br />
+    >Por: ptalfred
+  </figcaption>
+</figure>
+
+
+## Mostrar Código
+
+### Kotlin u otro lenguaje
+
+```kotlin
+fun main() {
+    val nombre = "BitLab"        // Declarando variable
+    println("Hola, $nombre!")        // ...mostrandolo
+    print("Contando:")
+    for (i in 0..10) {           // Recorriendo un loop de 0 a 10
+        print(" $i")
+    }
+}
+```
+#### Terminal o  Consola
+```console
+Hola, BitLab
+Contando: 0 1 2 3 4 5 6 7 8 9 10
+```
+
+### HTML
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+    <h1>Hola mundo</h1>
+</body>
+</html>
+```
+## Ventajas
+
+1. Facilidad de creación: Markdown es un lenguaje de marcado ligero que se basa en símbolos simples. Esto hace que sea muy fácil crear contenido en formato HTML utilizando Markdown.
+2. Flexibilidad: Markdown permite crear una amplia gama de formatos de texto, incluyendo encabezados, listas, enlaces, código, imágenes, etc. Esto proporciona una gran flexibilidad al crear páginas con post.
+3. Compatibilidad: Markdown es compatible con una amplia gama de editores de texto y programas de software. Esto facilita la creación, edición y publicación de contenido en Markdown.
+
+## Conclusion
+
+En conclusión, Markdown es una herramienta ideal para crear páginas con post. Es fácil de aprender y usar, flexible y compatible.
+
+
+
+
+
+
