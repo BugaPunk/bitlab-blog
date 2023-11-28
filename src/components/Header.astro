@@ -6,7 +6,8 @@ import MenuIcon from './icons/MenuIcon.astro'
 import Search from '@/components/Search'
 import TagIcon from './icons/TagIcon.astro'
 import ToggleTheme from './ToggleTheme.astro'
-import Shape from './icons/Shape.astro'
+import BitlabW from './icons/BitlabW.astro'
+import BitlabB from './icons/BitlabB.astro'
 
 const SOCIALNETWORKS = [
 	{
@@ -22,11 +23,41 @@ const SOCIALNETWORKS = [
 	}
 ]
 ---
+<script>
+	class changeIcon extends HTMLElement {
+		constructor() {
+			super()
+			const button = this.querySelector('button') as HTMLButtonElement
 
+			if (button) {
+				button.addEventListener('click', (e) => {
+					if (e.currentTarget instanceof HTMLButtonElement) {
+						let isPressed = e.currentTarget.getAttribute('aria-pressed') === 'true'
+						let themeChangeEvent = new CustomEvent('theme-change', {
+							detail: {
+								theme: isPressed ? 'light' : 'dark'
+							}
+						})
+						document.dispatchEvent(themeChangeEvent)
+						button.setAttribute('aria-pressed', String(!isPressed))
+					}
+				})
+			}
+		}
+	}
+
+	if ('customElements' in window) {
+		customElements.define('theme-toggle', themeToggle)
+	}
+</script>
 <header class='relative flex items-center h-12 font-semibold'>
 	
-	<a class='text-lg mr-auto' href='/'><Shape class="mr-auto" /></a>
+	<a id="changeIcon" class='text-lg mr-auto flex justify-center' href='/'>
+		<BitlabW class="flex-grow"/>
 
+		<BitlabB />
+	</a>
+	  
 	<div
 		id='astro-header-drawer'
 		class='shadow rounded-l-lg md:bg-transparent dark:md:bg-transparent bg-white dark:bg-[#0a0910] md:shadow-none md:rounded-none md:border-none md:h-auto md:static absolute transition-transform duration-300 ease-in translate-x-96 md:translate-x-0 top-12 -right-5 pl-4 pt-6 pb-4 md:p-0 h-[200px] w-[200px] z-50'
