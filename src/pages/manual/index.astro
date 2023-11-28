@@ -1,0 +1,48 @@
+---
+import BaseLayout from '@/layouts/BaseLayout'
+import TitlePage from '@/components/TitlePage'
+import { getTags } from '@/utils'
+const tags = await getTags()
+---
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+	header {
+        background: url('bg-425.jpg');
+      }
+
+      @media only screen and (min-width:640px) {
+        header {
+            background: url('bg-640.jpg');
+        }
+      }
+
+      @media only screen and (min-width:768px) {
+        header {
+            background: url('bg-768.jpg');
+        }
+      }
+
+      @media only screen and (min-width:1024px) {
+        header {
+            background: url('bg-1024.jpg');
+        }
+      }
+
+      @media only screen and (min-width:1025px) {
+        header {
+            background: url('bg-max.jpg');
+        }
+      } */
+
+          header {
+            background:url('https://onedrive.live.com/embed?resid=B3617E53BCF30304%21139&authkey=%21APS3ignIzQGcFxY&width=2340&height=1200');}
+</style>
+<BaseLayout title='Manual de Marca'>
+	  <header id="up" class="bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
+		<div class="h-screen bg-opacity-50 bg-black flex items-center justify-center" style="background:rgba(0,0,0,0.5);">
+			<div class="mx-2 text-center">
+				<TitlePage title='Manual de Marca' />
+			</div>
+		</div>
+	</header>
+</BaseLayout>
