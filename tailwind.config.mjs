@@ -8,6 +8,7 @@ module.exports = {
 		extend: {
 			colors: {
 				white: '#f8f9fa',
+				swhite: '#f0f0f0',
 				'midnight': '#0a0910',
 			},
 			fontFamily: {
