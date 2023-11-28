@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme')
-export default {
+
+module.exports = {
 	darkMode: 'class',
 	content: ['./src/**/*.{astro,html,js,md,mdx,ts}'],
 	theme: {
@@ -8,6 +9,9 @@ export default {
 			colors: {
 				white: '#f8f9fa',
 				'midnight': '#0a0910',
+			},
+			fontFamily: {
+				body: ['Manrope', ...defaultTheme.fontFamily.sans]
 			},
 			gridTemplateColumns: {
 				list: 'repeat(auto-fill, minmax(400px, max-content))'

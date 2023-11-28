@@ -5,7 +5,7 @@ import tailwind from '@astrojs/tailwind'
 import { remarkReadingTime } from './src/utils/readTime.ts'
 
 export default defineConfig({
-	site: 'https://lemuria-blog.deno.dev/',
+	site: 'https://bitlab-blog.deno.dev/',
 	markdown: {
 		remarkPlugins: [remarkReadingTime],
 		drafts: true,

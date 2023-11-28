@@ -3,64 +3,51 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
 	/* body {
 		transition: background-color 0.5s ease;
 	} */
-	#font-terminal {
-		font-family: 'Victor Mono', monospace;
-	}
 
 	.prose code {
-		font-size:13px;
+		font-family: 'Victor Mono', monospace;
+		@apply text-sm;
 	}
 
 	@font-face {
-		font-family: Selawik-B;
+		font-family: Manrope;
 		src: url(../assets/fonts/Selawik-Bold.woff2) format('woff2');
 	}
 
 	@font-face {
-		font-family: Selawik-M;
-		src: url(../assets/fonts/Selawik-SemiBold.woff2) format('woff2');
+		font-family: Manrope;
+		src: url(../assets/fonts/Selawik-Semibold.woff2) format('woff2');
 	}
 
 	@font-face {
-		font-family: Selawik-L;
-		src: url(../assets/fonts/Selawik-Light.woff2) format('woff2');
+		font-family: Manrope;
+		src: url(../assets/fonts/Selawik-Semilight.woff2) format('woff2');
 	}
 
 	@font-face {
-		font-family: Selawik-R;
+		font-family: Manrope;
 		src: url(../assets/fonts/Selawik-Regular.woff2) format('woff2');
 	}
-
-	.font-t {
-		font-family: Selawik-M;
+	@font-face {
+		font-family: Manrope;
+		src: url(../assets/fonts/Selawik-Semilight.woff2) format('woff2');
 	}
-
-	.font-r {
-		font-family: Selawik-R;
-	}
-
-	.font-l {
-		font-family: Selawik-L;
-	}
-
-	
-
 	:root {
-		font-family: Selawik-R;
+		font-family: 'Selawik', sans-serif;
 	}
 
+	/* prose styles here */
 	.prose h1,
 	h2,
 	h3,
 	h4,
 	h5,
 	h6 {
-		@apply text-zinc-800 dark:text-zinc-100 !important;
+		@apply text-zinc-800 dark:text-zinc-100   !important;
 	}
 }
 
