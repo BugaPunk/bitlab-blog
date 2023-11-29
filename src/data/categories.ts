@@ -1,8 +1,8 @@
-// List of categories for blog posts
 export const CATEGORIES = [
-  "Iteracion 1",
-  "Iteracion 2",
-  "Iteracion 3",
-  "Iteracion 4",
-  "Iteracion 5"
+  "Iteración 1",
+  "Iteración 2",
+  "Iteración 3",
+  "Iteración 4",
+  "Iteración 5",
+  "Otros"
 ] as const;
