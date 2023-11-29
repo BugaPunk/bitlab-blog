@@ -5,6 +5,5 @@ export const CATEGORIES = [
   "Iteracion 3",
   "Iteracion 4",
   "Iteracion 5",
-  "Iteracion 6",
   "Otros",
 ] as const;
