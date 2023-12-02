@@ -10,6 +10,9 @@ module.exports = {
         white: "#f8f9fa",
         swhite: "#f0f0f0",
         midnight: "#0a0910",
+        vp: "#01ff8d",
+        bp: "#014576",
+        bd: "#022b3f",
       },
       fontFamily: {
         body: ["Manrope", ...defaultTheme.fontFamily.sans],
